@@ -11,7 +11,7 @@ class MomoDidView extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.kunde.value
+          () => controller.conn.value
               ? const CircularProgressIndicator(color: Colors.orange)
               : buildError(),
         ),
@@ -26,7 +26,7 @@ class MomoDidView extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.axki();
+              controller.hzgpjvyk();
             },
             icon: const Icon(
               Icons.restart_alt,
